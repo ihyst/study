@@ -1,0 +1,415 @@
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@font-face {
+	font-family: 'Pobeda';
+	src: url('/fonts/Pobeda.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Pobeda', sans-serif;
+	font-weight: 400;
+}
+		
+.container{
+	max-width: 1520px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.hero-link {
+	border-bottom: 2px solid currentColor;
+	font-size: 30px;
+	font-weight: 400;
+	text-decoration: none;
+	color:white;
+}
+.hero-link:hover {
+	color:rgb(10, 201, 10) ;
+	transition-duration: 1.5s;
+}
+
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 20px 0;
+}
+.hero {	
+	padding-top: 112px;
+	padding-bottom: 15px;
+	background-image: url(/img/hero-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero-descr {
+	margin: 0 0;
+	font-size: 35px;
+}
+
+
+.hero-content {
+	max-width: 100%;
+	color:white;
+}
+
+.hero-subtitle {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.hero-title {
+	margin: 0;
+	font-weight: 400;
+	font-size: 50px;
+	text-align: center;
+}
+
+.description {
+	background-color: rgba(107, 59, 14, 0.6)
+}
+
+.site-story {
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 43px;
+}
+
+.site-design {
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 400;
+	color:white;
+	width: 7ch;
+	font-size: 40px;
+	overflow: hidden;
+}	
+
+.storytale {
+	font-size: 35px;
+}
+
+.site-descr {
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 35px;
+	color: white;
+}
+
+.uniq-subtitle {
+	text-align: center;
+	margin-top: auto;
+	padding-top: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	color:rgb(10, 201, 10);
+}
+
+.uniq-item {
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.uniq-descr {
+	margin: 0;
+    margin-bottom: 56px;
+    min-width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+	color: wheat;
+}
+
+.footer {
+	left: 0;
+	top: 0;
+	max-width: 100%;
+	padding: 0 15px;
+	background-color: rgb(83, 41, 16);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.site-uniq {
+	display: grid;
+    gap: 300px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-top {
+	min-width: 0;
+	margin: 0;
+    display: fixed;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+	margin: 0;
+	line-height: -10px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.footer-list{
+	margin: 0;
+	text-align: center;
+	min-width: 100%;
+}
+
+.footer-column {
+	min-width: 100%;
+}
+
+.footer-contacts {
+	margin: 0;
+	padding-left: 112px;
+}
+
+.footer-container{
+	max-width: 1530px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.footer-contacts-item{
+	margin: 0;
+	width: auto;
+	font-size: 30px;
+}
+
+.footer-title {
+	max-width: 100%;
+    margin: 0;
+    font-weight: 400;
+	text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: rgb(10, 201, 10);
+}
+
+.footer-middle {
+	max-width: none;
+    --grid-gap: 70px;
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px auto;
+}
+
+
+.footer-contacts-text {
+    font-size: 25px;
+    line-height: 40px;
+    color: rgb(10, 201, 10);
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(10, 201, 10);
+}
+
+.footer-contacts-value {
+	margin-left: 20px;
+    display: inline-block;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-mail {
+	display: block;
+	line-height: 20px;
+	position: absolute;
+	margin: 0;
+	font-weight: 400;
+	font-size: 30px;
+	text-decoration: none;
+	color: rgb(10, 201, 10);
+}
+
+.footer-phone {
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	font-weight: 400;
+	font-size: 30px;
+	text-decoration: none;
+	color:rgb(10, 201, 10);
+}
+
+@media (max-width: 1170px) {
+	.footer-title {
+		min-width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.footer-item {
+		min-width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media (max-width: 770px) {
+	.site-uniq{
+		margin: 0;
+		display: grid;
+		gap: 21%;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.uniq-descr{
+		max-width: none;
+		padding-top: 15px;
+		margin: 0;
+		font-size: 20px;
+		color: wheat;
+	}
+
+	/*azgina adaptive*/
+
+	.footer-list{
+		margin: 0px;
+		text-align: center;
+		min-width: 0px;
+	}
+	
+	.footer-column {
+		min-width: 0px;
+		margin: 0px;
+	}
+	
+	.footer-contacts {
+		margin: 0;
+		padding-left: 12px;
+	}
+	
+	.footer-container{
+		max-width: auto;
+   		padding: 0 15px;
+   		margin: 0 auto;
+	}
+	
+	.footer-contacts-item{
+		margin: 0;
+		width: auto;
+		font-size: 30px;
+	}
+	
+	.footer-middle {
+		--grid-gap: 70px;
+		display: grid;
+		gap: var(--grid-gap);
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0px;
+	}
+}
+
+@media (max-width: 640px) {
+	.hero{
+		min-width: none;
+	}
+	.footer {
+		min-width: none;
+	}
+	.footer-list {
+		max-width: none;
+		margin: 0px;
+	}
+	.footer-column {
+		max-width: none;
+		min-width: none;
+		margin: 0px;
+	}
+	.footer-list{
+		margin: 0;
+		text-align: center;
+		min-width: none;
+	}
+	
+	.footer-column {
+		min-width: none;
+	}
+	
+	.footer-contacts {
+		margin: 0;
+		padding-left: 10px;
+	}
+	
+	.footer-container{
+		max-width: none;
+		padding: 0px 15px;
+		margin: 0px;
+	}
+
+	.footer-middle {
+		--grid-gap: 10px;
+		display: grid;
+		gap: var(--grid-gap);
+		grid-template-columns: repeat(1, 1fr);
+		padding: 0px;
+	}
+}
+
+/*asdasd*/
+
+@media print {
+	.hero-link {
+		visibility: hidden;
+	}
+	.hero-content {
+		color: black;
+	}
+
+	.site-design {
+		color: black;
+	}
+	.site-descr {
+		color: black;
+	}
+	.footer-container {
+		display: none;
+		color: black;
+	}
+	
+	.uniq-item {
+		color:black;
+	}
+	
+	.footer-contacts-item {
+		color:black;
+	}
+}
